@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1e1e1e, #282828);
+    color: white;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #ffcc00;
+}
+
+.back-btn {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 30px;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffcc00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+/* Booking Section */
+.booking-section {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.booking-section h2 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.booking-section label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.booking-section input,
+.booking-section select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: #fff;
+}
+
+.booking-section input::placeholder {
+    color: #aaa;
+}
+
+.booking-section input:focus,
+.booking-section select:focus {
+    outline: none;
+    border: 2px solid #ffcc00;
+}
+
+.booking-section .btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ffcc00;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.booking-section .btn:hover {
+    background: #e6b800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-section {
+        width: 90%;
+    }
+}

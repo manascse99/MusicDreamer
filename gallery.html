@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Gallery - The Musician Band</title>
+    <link rel="stylesheet" href="gallerydesign.css">
+</head>
+<body>
+    <header>
+        <h1>Event Gallery</h1>
+        <a href="MainPage.html" class="back-btn">Back to Home</a>
+    </header>
+
+    <main>
+        <section class="gallery-section">
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item">
+                    <img src="https://i.ytimg.com/vi/252Q3_nASJo/maxresdefault.jpg" alt="Event 1">
+                    <div class="gallery-overlay">
+                        <p>Rock Concert, New York - 2023</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item">
+                    <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/6/2024/08/06144503/hero-image-for-cms-10-1.jpeg" alt="Event 2">
+                    <div class="gallery-overlay">
+                        <p>Jazz Night, Chicago - 2023</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item">
+                    <img src="https://whatsondisneyplus.b-cdn.net/wp-content/uploads/2023/05/imagine-dragons.jpeg" alt="Event 3">
+                    <div class="gallery-overlay">
+                        <p>Summer Festival, Vegas - 2023</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item">
+                    <img src="https://d21buns5ku92am.cloudfront.net/68644/images/461664-ID_Signage1920x1080-d8a0cf-large-1672251216.jpg" alt="Event 4">
+                    <div class="gallery-overlay">
+                        <p>Acoustic Evening, San Francisco - 2023</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item">
+                    <img src="https://www.stadefrance.com/sites/default/files/styles/event_details/public/2024-09/imagine-dragons-event-879X555.jpg.webp?itok=8PrVf0P1" alt="Event 5">
+                    <div class="gallery-overlay">
+                        <p>Global Music Fest, France - 2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking-section">
+            <h2>Book Your Spot for Upcoming Events!</h2>
+            <form action="#" method="POST">
+                <label for="event-name">Event Name:</label>
+                <select id="event-name" name="event-name" required>
+                    <option value="" disabled selected>Select an Event</option>
+                    <option value="rock-concert">Rock Concert</option>
+                    <option value="jazz-night">Jazz Night</option>
+                    <option value="summer-festival">Summer Festival</option>
+                    <option value="acoustic-evening">Acoustic Evening</option>
+                    <option value="global-music-fest">Global Music Fest</option>
+                </select>
+
+                <label for="your-name">Your Name:</label>
+                <input type="text" id="your-name" name="your-name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <button type="submit" class="btn">Book Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Musician Band. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
